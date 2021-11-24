@@ -24,8 +24,8 @@ const Hero = () => {
 		// this div is used for full screen
 		<div className="relative min-h-screen overflow-y-hidden">
 			{/* This div is used for the top navbar */}
-			<div className="absolute top-0 left-0 h-screen w-full">
-				<Image src={Layer675} objectFit="contain" />
+			<div className="absolute top-0 left-0 h-full w-screen">
+				<Image src={Layer675} objectFit="contain" layout="responsive" />
 			</div>
 			<div className="w-full flex justify-center items-center relative">
 				<Image src={Base} objectFit="contain" />
@@ -38,8 +38,14 @@ const Hero = () => {
 			</div>
 
 			{/* Used for the left side element */}
-			<div className="absolute z-20 left-0 top-20 w-2/5">
-				<Image src={ElementSide1} objectFit="contain" />
+			<div className="absolute z-20 left-0 bottom-10 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
+				<Image
+					src={ElementSide1}
+					objectFit="contain"
+					alt="Element side 2"
+					width={600}
+					// layout="responsive"
+				/>
 			</div>
 			{/* 
 			
@@ -53,49 +59,71 @@ const Hero = () => {
 			*/}
 
 			{/* This div is used for the characters */}
-			<div className="w-full h-full left-1/2 -translate-x-1/2 relative mx-auto top-20 z-50">
-				<div className="absolute left-56 -top-8 z-30 w-6/12">
-					<Image src={Orge} objectFit="contain" />
-				</div>
-				<div className="absolute left-96 top-6 z-50 w-64">
-					<Image src={Warrior2} objectFit="contain" />
-				</div>
-				<div className="absolute left-[544px] top-24 z-40 w-[99px]">
-					<Image src={Archer1} objectFit="contain" className="" />
-				</div>
-				<div className="absolute left-[544px] top-6 z-50 w-72">
-					<Image src={Warrior1} objectFit="contain" />
-				</div>
-				<div className="absolute right-96 -translate-x-16 top-32 z-40 w-56">
-					<Image src={Spartan} objectFit="contain" className="" />
-				</div>
-				<div className="absolute right-80 top-24 z-30 w-48">
-					<Image src={Archer2} objectFit="contain" className="" />
-				</div>
-				<div className="absolute top-80 left-80 w-[840px] z-30">
-					<Image src={Shadow} objectFit="contain" className="" />
+			<div className="w-full  h-1/2 left-1/2 -translate-x-1/2 absolute bottom-20 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
+				<div className="relative h-full w-full">
+					<div className="flex absolute bottom-0 lg:-bottom-10 xl:-bottom-32 2xl:-bottom-44 justify-center translate-x-10 sm:translate-x-16 md:translate-x-24 xl:translate-x-32 2xl:translate-x-1/4 w-[400px] sm:w-[450px] md:w-[500px] lg:w-[600px] xl:w-[700px] 2xl:w-[900px]">
+						<Image src={Orge} objectFit="contain" />
+					</div>
+
+					<div className="absolute z-50 hidden md:flex justify-center w-full -translate-x-10 sm:-translate-x-16 md:-translate-x-20 lg:-translate-x-0 xl:-translate-x-64 bottom-2 sm:-bottom-4 md:-bottom-10 lg:-bottom-36 xl:-bottom-40 2xl:-bottom-40">
+						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96 2xl:w-auto">
+							<Image src={Warrior2} objectFit="contain" />
+						</span>
+					</div>
+					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48 2xl:-translate-x-2 z-40">
+						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+							<Image src={Archer1} objectFit="contain" />
+						</span>
+					</div>
+					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48 2xl:-translate-x-1 z-40">
+						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+							<Image src={Warrior1} objectFit="contain" />
+						</span>
+					</div>
+					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48  2xl:translate-x-48 z-30">
+						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+							<Image src={Spartan} objectFit="contain" />
+						</span>
+					</div>
+					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48 2xl:translate-x-[450px] z-20">
+						<div className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+							<Image src={Archer2} objectFit="contain" />
+						</div>
+					</div>
+					<div className="absolute flex justify-center w-full 2xl:-bottom-64 z-30">
+						<Image src={Shadow} objectFit="contain" />
+					</div>
 				</div>
 			</div>
 
 			{/* Used for the right side element */}
-			<div className="absolute z-20 right-0 top-20 w-2/5">
-				<Image src={ElementSide2} objectFit="contain" />
+			<div className="absolute z-20 right-0 bottom-10 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
+				<Image
+					src={ElementSide2}
+					objectFit="contain"
+					alt="Element side 2"
+					width={600}
+				/>
 			</div>
 
 			{/* Used for the bottom section like Coming soon and copyright logo */}
-			<div className="absolute bottom-0 z-50 w-96 left-1/2 -translate-x-1/2">
+			<div className="absolute bottom-10 z-50 w-auto left-1/2 -translate-x-1/2">
 				<Image src={ComingSoom} objectFit="contain" />
-				<div className="w-full flex justify-center">
+				<div className="w-full scale-125 flex justify-center">
 					<Image src={Copyright} objectFit="contain" />
 				</div>
 			</div>
 
 			{/* Used for the bottom grass section */}
-			<div className="absolute bottom-8 left-0">
-				<Image src={Grass} objectFit="contain" />
+			<div className="absolute bottom-8 left-0 w-screen">
+				<Image src={Grass} objectFit="contain" layout="responsive" />
 			</div>
-			<div className="absolute -bottom-3">
-				<Image src={GrassFront} objectFit="contain" />
+			<div className="absolute -bottom-3 w-screen">
+				<Image
+					src={GrassFront}
+					objectFit="contain"
+					layout="responsive"
+				/>
 			</div>
 		</div>
 	);
