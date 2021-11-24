@@ -22,7 +22,7 @@ import Copyright from '../assets/2021 © Battle Saga.png';
 const Hero = () => {
 	return (
 		// this div is used for full screen
-		<div className="relative min-h-screen overflow-y-hidden">
+		<div className="relative min-h-screen overflow-y-hidden overflow-x-hidden">
 			{/* This div is used for the top navbar */}
 			<div className="absolute top-0 left-0 h-full w-screen">
 				<Image src={Layer675} objectFit="contain" layout="responsive" />
@@ -61,36 +61,36 @@ const Hero = () => {
 			{/* This div is used for the characters */}
 			<div className="w-full  h-1/2 left-1/2 -translate-x-1/2 absolute bottom-20 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
 				<div className="relative h-full w-full">
-					<div className="flex absolute bottom-0 lg:-bottom-10 xl:-bottom-32 2xl:-bottom-44 justify-center translate-x-10 sm:translate-x-16 md:translate-x-24 xl:translate-x-32 2xl:translate-x-1/4 w-[400px] sm:w-[450px] md:w-[500px] lg:w-[600px] xl:w-[700px] 2xl:w-[900px]">
+					<div className="flex absolute bottom-0 lg:-bottom-10 xl:-bottom-32 2xl:-bottom-44 justify-center translate-x-10 sm:translate-x-16 md:translate-x-24 xl:translate-x-32 2xl:translate-x-1/4 w-[400px] sm:w-[450px] md:w-[500px] lg:w-[600px] xl:w-[800px] 2xl:w-[900px]">
 						<Image src={Orge} objectFit="contain" />
 					</div>
 
-					<div className="absolute z-50 hidden md:flex justify-center w-full -translate-x-10 sm:-translate-x-16 md:-translate-x-20 lg:-translate-x-0 xl:-translate-x-64 bottom-2 sm:-bottom-4 md:-bottom-10 lg:-bottom-36 xl:-bottom-40 2xl:-bottom-40">
+					<div className="absolute z-40 hidden md:flex justify-center w-full -translate-x-10 sm:-translate-x-16 md:-translate-x-20 lg:-translate-x-52 xl:-translate-x-64 bottom-2 sm:-bottom-4 md:-bottom-10 lg:-bottom-28 xl:-bottom-40 2xl:-bottom-40">
 						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96 2xl:w-auto">
 							<Image src={Warrior2} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48 2xl:-translate-x-2 z-40">
-						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 lg:-translate-x-28 xl:-translate-x-5 2xl:-translate-x-2 z-40">
+						<span className="w-40 sm:w-52 md:w-60 lg:w-28 xl:w-72 2xl:w-96">
 							<Image src={Archer1} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48 2xl:-translate-x-1 z-40">
+					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 xl:-translate-x-1 2xl:-translate-x-1 z-40">
 						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
 							<Image src={Warrior1} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48  2xl:translate-x-48 z-30">
+					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-32 xl:-bottom-44 2xl:-bottom-48 lg:translate-x-32 xl:translate-x-40 2xl:translate-x-48 z-30">
 						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
 							<Image src={Spartan} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full 2xl:-bottom-48 2xl:translate-x-[450px] z-20">
-						<div className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 lg:translate-x-72 xl:translate-x-[400px] 2xl:translate-x-[450px] z-20">
+						<div className="w-40 sm:w-52 md:w-60 lg:w-60 xl:w-96">
 							<Image src={Archer2} objectFit="contain" />
 						</div>
 					</div>
-					<div className="absolute flex justify-center w-full 2xl:-bottom-64 z-30">
+					<div className="absolute flex justify-center w-full -bottom-6 md:-bottom-12 lg:-bottom-32 xl:-bottom-44 2xl:-bottom-64 z-30">
 						<Image src={Shadow} objectFit="contain" />
 					</div>
 				</div>
