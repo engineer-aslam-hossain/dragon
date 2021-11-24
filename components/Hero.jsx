@@ -66,27 +66,27 @@ const Hero = () => {
 					</div>
 
 					<div className="absolute z-40 flex justify-center w-full -translate-x-36 sm:-translate-x-48 md:-translate-x-48 lg:-translate-x-52 xl:-translate-x-64 bottom-28 sm:-bottom-4 md:-bottom-8 lg:-bottom-28 xl:-bottom-40 2xl:-bottom-40">
-						<span className="max-w-72 sm:w-80 md:w-60 lg:w-72 xl:w-96 2xl:w-auto">
+						<span className="w-72 sm:w-80 md:w-60 lg:w-72 xl:w-96 2xl:w-auto">
 							<Image src={Warrior2} objectFit="contain" />
 						</span>
 					</div>
 					<div className="absolute flex justify-center w-full bottom-24 sm:-bottom-24 md:-bottom-12 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 -translate-x-16 sm:-translate-x-24 md:-translate-x-28 lg:-translate-x-28 xl:-translate-x-5 2xl:-translate-x-2 z-40">
-						<span className="max-w-28 sm:w-48 md:w-24 lg:w-28 xl:w-72 2xl:w-96">
+						<span className="w-28 sm:w-48 md:w-24 lg:w-28 xl:w-72 2xl:w-96">
 							<Image src={Archer1} objectFit="contain" />
 						</span>
 					</div>
 					<div className="absolute flex justify-center w-full bottom-16 sm:-bottom-20 md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 -translate-x-4 sm:translate-x-2 xl:-translate-x-1 2xl:-translate-x-1 z-40">
-						<span className="max-w-80 sm:w-80 md:w-64 lg:w-72 xl:w-96">
+						<span className="w-80 sm:w-80 md:w-64 lg:w-72 xl:w-96">
 							<Image src={Warrior1} objectFit="contain" />
 						</span>
 					</div>
 					<div className="absolute flex justify-center w-full bottom-28 sm:-bottom-10 md:-bottom-10 lg:-bottom-32 xl:-bottom-44 2xl:-bottom-48  translate-x-28 sm:translate-x-32 md:translate-x-20 lg:translate-x-32 xl:translate-x-40 2xl:translate-x-48 z-30">
-						<span className="max-w-64 sm:w-80 md:w-60 lg:w-72 xl:w-96">
+						<span className="w-64 sm:w-80 md:w-60 lg:w-72 xl:w-96">
 							<Image src={Spartan} objectFit="contain" />
 						</span>
 					</div>
 					<div className="absolute flex justify-center w-full bottom-28 sm:-bottom-10 md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 translate-x-64 sm:translate-x-80 md:translate-x-60 lg:translate-x-72 xl:translate-x-[400px] 2xl:translate-x-[450px] z-20 ">
-						<div className="max-w-52 sm:w-80 md:w-48 lg:w-60 xl:w-96">
+						<div className="52 sm:w-80 md:w-48 lg:w-60 xl:w-96">
 							<Image src={Archer2} objectFit="contain" />
 						</div>
 					</div>
