@@ -59,7 +59,7 @@ const Hero = () => {
 			*/}
 
 			{/* This div is used for the characters */}
-			<div className="w-full h-1/2 left-1/2 -translate-x-1/2 absolute bottom-44 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
+			<div className="w-full scale-50 sm:scale-100 h-1/2 left-1/2 -translate-x-1/2 absolute bottom-44 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
 				<div className="relative h-full w-full">
 					<div className="flex absolute bottom-20 sm:-bottom-10 lg:-bottom-10 xl:-bottom-32 2xl:-bottom-44 md:justify-center -translate-x-48 sm:-translate-x-56 md:translate-x-24 xl:translate-x-32 2xl:translate-x-1/4 w-[700px] sm:w-[800px] md:w-[600px] lg:w-[600px] xl:w-[800px] 2xl:w-[900px]">
 						<Image src={Orge} objectFit="contain" />
