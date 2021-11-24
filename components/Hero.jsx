@@ -15,7 +15,9 @@ import Archer2 from '../assets/archer 2.png';
 import Shadow from '../assets/shadow.png';
 import Spartan from '../assets/spartan.png';
 import DragonFront from '../assets/DRAGON_FRONT copy.png';
+import DragonFrontLarge from '../assets/DRAGON_FRONT copy-3x.png';
 import DragonSide from '../assets/DRAGON_SIDE copy.png';
+import DragonSideLarge from '../assets/DRAGON_SIDE copy-3x.png';
 import ComingSoom from '../assets/COMING SOON.png';
 import Copyright from '../assets/2021 © Battle Saga.png';
 
@@ -47,16 +49,14 @@ const Hero = () => {
 					// layout="responsive"
 				/>
 			</div>
-			{/* 
-			
-			<div className="absolute w-52 left-80 top-20">
-				<Image src={DragonFront} objectFit="contain" />
+
+			{/* Two dragons */}
+			<div className="absolute w-[400px] left-80 top-20">
+				<Image src={DragonFrontLarge} objectFit="contain" />
 			</div>
-			<div className="absolute w-80 right-72 translate-y-2 -translate-x-4 top-16">
-				<Image src={DragonSide} objectFit="contain" />
+			<div className="absolute w-[500px] right-72 translate-y-2 -translate-x-4 top-16">
+				<Image src={DragonSideLarge} objectFit="contain" />
 			</div>
-			
-			*/}
 
 			{/* This div is used for the characters */}
 			<div className="w-full scale-50 sm:scale-100 h-1/2 left-1/2 -translate-x-1/2 absolute bottom-44 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
