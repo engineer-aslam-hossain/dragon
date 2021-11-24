@@ -65,32 +65,32 @@ const Hero = () => {
 						<Image src={Orge} objectFit="contain" />
 					</div>
 
-					<div className="absolute z-40 hidden md:flex justify-center w-full -translate-x-10 sm:-translate-x-16 md:-translate-x-20 lg:-translate-x-52 xl:-translate-x-64 bottom-2 sm:-bottom-4 md:-bottom-10 lg:-bottom-28 xl:-bottom-40 2xl:-bottom-40">
+					<div className="absolute z-40 hidden md:flex justify-center w-full -translate-x-10 sm:-translate-x-16 md:-translate-x-48 lg:-translate-x-52 xl:-translate-x-64 bottom-2 sm:-bottom-4 md:-bottom-8 lg:-bottom-28 xl:-bottom-40 2xl:-bottom-40">
 						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96 2xl:w-auto">
 							<Image src={Warrior2} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 lg:-translate-x-28 xl:-translate-x-5 2xl:-translate-x-2 z-40">
-						<span className="w-40 sm:w-52 md:w-60 lg:w-28 xl:w-72 2xl:w-96">
+					<div className="absolute hidden md:flex justify-center w-full md:-bottom-12 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 md:-translate-x-28 lg:-translate-x-28 xl:-translate-x-5 2xl:-translate-x-2 z-40">
+						<span className="w-40 sm:w-52 md:w-24 lg:w-28 xl:w-72 2xl:w-96">
 							<Image src={Archer1} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 xl:-translate-x-1 2xl:-translate-x-1 z-40">
-						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+					<div className="absolute hidden md:flex justify-center w-full md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 md:-translate-x-6 xl:-translate-x-1 2xl:-translate-x-1 z-40">
+						<span className="w-40 sm:w-52 md:w-64 lg:w-72 xl:w-96">
 							<Image src={Warrior1} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-32 xl:-bottom-44 2xl:-bottom-48 lg:translate-x-32 xl:translate-x-40 2xl:translate-x-48 z-30">
+					<div className="absolute hidden md:flex justify-center w-full md:-bottom-10 lg:-bottom-32 xl:-bottom-44 2xl:-bottom-48 md:translate-x-20 lg:translate-x-32 xl:translate-x-40 2xl:translate-x-48 z-30">
 						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
 							<Image src={Spartan} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 lg:translate-x-72 xl:translate-x-[400px] 2xl:translate-x-[450px] z-20">
-						<div className="w-40 sm:w-52 md:w-60 lg:w-60 xl:w-96">
+					<div className="absolute hidden md:flex justify-center w-full md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 md:translate-x-60 lg:translate-x-72 xl:translate-x-[400px] 2xl:translate-x-[450px] z-20">
+						<div className="w-40 sm:w-52 md:w-48 lg:w-60 xl:w-96">
 							<Image src={Archer2} objectFit="contain" />
 						</div>
 					</div>
-					<div className="absolute flex justify-center w-full -bottom-6 md:-bottom-12 lg:-bottom-32 xl:-bottom-44 2xl:-bottom-64 z-30">
+					<div className="absolute flex justify-center w-full -bottom-6 md:-bottom-20 lg:-bottom-40 xl:-bottom-52 2xl:-bottom-64 z-30">
 						<Image src={Shadow} objectFit="contain" />
 					</div>
 				</div>
