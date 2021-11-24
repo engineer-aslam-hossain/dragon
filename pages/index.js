@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 
 export default function Home() {
 	return (
-		<div className="">
+		<div>
 			<Head>
 				<title>Battle Saga</title>
 				<link rel="icon" href="/favicon.ico" />

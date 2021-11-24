@@ -31,14 +31,14 @@ const Hero = () => {
 				<Image src={Base} objectFit="contain" />
 				<div className="absolute">
 					<Image src={LogoBase} objectFit="contain" />
-					<div className="absolute top-2 w-full flex justify-center items-center">
+					<div className="absolute top-5 sm:top-4 md:top-3 lg:top-2 w-full flex justify-center items-center">
 						<Image src={BattleSaga} objectFit="contain" />
 					</div>
 				</div>
 			</div>
 
 			{/* Used for the left side element */}
-			<div className="absolute z-20 left-0 bottom-10 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
+			<div className="absolute z-20 left-0 bottom-48 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
 				<Image
 					src={ElementSide1}
 					objectFit="contain"
@@ -59,45 +59,45 @@ const Hero = () => {
 			*/}
 
 			{/* This div is used for the characters */}
-			<div className="w-full  h-1/2 left-1/2 -translate-x-1/2 absolute bottom-20 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
+			<div className="w-full h-1/2 left-1/2 -translate-x-1/2 absolute bottom-44 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
 				<div className="relative h-full w-full">
-					<div className="flex absolute bottom-0 lg:-bottom-10 xl:-bottom-32 2xl:-bottom-44 justify-center translate-x-10 sm:translate-x-16 md:translate-x-24 xl:translate-x-32 2xl:translate-x-1/4 w-[400px] sm:w-[450px] md:w-[500px] lg:w-[600px] xl:w-[800px] 2xl:w-[900px]">
+					<div className="flex absolute bottom-20 sm:-bottom-10 lg:-bottom-10 xl:-bottom-32 2xl:-bottom-44 md:justify-center -translate-x-48 sm:-translate-x-56 md:translate-x-24 xl:translate-x-32 2xl:translate-x-1/4 w-[700px] sm:w-[800px] md:w-[600px] lg:w-[600px] xl:w-[800px] 2xl:w-[900px]">
 						<Image src={Orge} objectFit="contain" />
 					</div>
 
-					<div className="absolute z-40 hidden md:flex justify-center w-full -translate-x-10 sm:-translate-x-16 md:-translate-x-48 lg:-translate-x-52 xl:-translate-x-64 bottom-2 sm:-bottom-4 md:-bottom-8 lg:-bottom-28 xl:-bottom-40 2xl:-bottom-40">
-						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96 2xl:w-auto">
+					<div className="absolute z-40 flex justify-center w-full -translate-x-36 sm:-translate-x-48 md:-translate-x-48 lg:-translate-x-52 xl:-translate-x-64 bottom-28 sm:-bottom-4 md:-bottom-8 lg:-bottom-28 xl:-bottom-40 2xl:-bottom-40">
+						<span className="w-72 sm:w-80 md:w-60 lg:w-72 xl:w-96 2xl:w-auto">
 							<Image src={Warrior2} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full md:-bottom-12 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 md:-translate-x-28 lg:-translate-x-28 xl:-translate-x-5 2xl:-translate-x-2 z-40">
-						<span className="w-40 sm:w-52 md:w-24 lg:w-28 xl:w-72 2xl:w-96">
+					<div className="absolute flex justify-center w-full bottom-24 sm:-bottom-24 md:-bottom-12 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 -translate-x-16 sm:-translate-x-16 md:-translate-x-28 lg:-translate-x-28 xl:-translate-x-5 2xl:-translate-x-2 z-40">
+						<span className="w-28 sm:w-48 md:w-24 lg:w-28 xl:w-72 2xl:w-96">
 							<Image src={Archer1} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 md:-translate-x-6 xl:-translate-x-1 2xl:-translate-x-1 z-40">
-						<span className="w-40 sm:w-52 md:w-64 lg:w-72 xl:w-96">
+					<div className="absolute flex justify-center w-full bottom-16 sm:-bottom-20 md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 -translate-x-4 sm:-translate-x-6 xl:-translate-x-1 2xl:-translate-x-1 z-40">
+						<span className="w-80 sm:w-80 md:w-64 lg:w-72 xl:w-96">
 							<Image src={Warrior1} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full md:-bottom-10 lg:-bottom-32 xl:-bottom-44 2xl:-bottom-48 md:translate-x-20 lg:translate-x-32 xl:translate-x-40 2xl:translate-x-48 z-30">
-						<span className="w-40 sm:w-52 md:w-60 lg:w-72 xl:w-96">
+					<div className="absolute flex justify-center w-full bottom-28 sm:-bottom-10 md:-bottom-10 lg:-bottom-32 xl:-bottom-44 2xl:-bottom-48  translate-x-28 sm:translate-x-32 md:translate-x-20 lg:translate-x-32 xl:translate-x-40 2xl:translate-x-48 z-30">
+						<span className="w-64 sm:w-80 md:w-60 lg:w-72 xl:w-96">
 							<Image src={Spartan} objectFit="contain" />
 						</span>
 					</div>
-					<div className="absolute hidden md:flex justify-center w-full md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 md:translate-x-60 lg:translate-x-72 xl:translate-x-[400px] 2xl:translate-x-[450px] z-20">
-						<div className="w-40 sm:w-52 md:w-48 lg:w-60 xl:w-96">
+					<div className="absolute flex justify-center w-full bottom-28 sm:-bottom-10 md:-bottom-10 lg:-bottom-36 xl:-bottom-44 2xl:-bottom-48 translate-x-64 sm:translate-x-80 md:translate-x-60 lg:translate-x-72 xl:translate-x-[400px] 2xl:translate-x-[450px] z-20 ">
+						<div className="w-52 sm:w-80 md:w-48 lg:w-60 xl:w-96">
 							<Image src={Archer2} objectFit="contain" />
 						</div>
 					</div>
-					<div className="absolute flex justify-center w-full -bottom-6 md:-bottom-20 lg:-bottom-40 xl:-bottom-52 2xl:-bottom-64 z-30">
+					<div className="absolute flex justify-center w-full bottom-20 sm:-bottom-6 md:-bottom-20 lg:-bottom-40 xl:-bottom-52 2xl:-bottom-64 z-30">
 						<Image src={Shadow} objectFit="contain" />
 					</div>
 				</div>
 			</div>
 
 			{/* Used for the right side element */}
-			<div className="absolute z-20 right-0 bottom-10 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
+			<div className="absolute z-20 right-0 bottom-48 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
 				<Image
 					src={ElementSide2}
 					objectFit="contain"
@@ -107,22 +107,22 @@ const Hero = () => {
 			</div>
 
 			{/* Used for the bottom section like Coming soon and copyright logo */}
-			<div className="absolute bottom-10 z-50 w-auto left-1/2 -translate-x-1/2">
+			<div className="absolute bottom-52 sm:bottom-10 z-50 w-auto left-1/2 -translate-x-1/2">
 				<Image src={ComingSoom} objectFit="contain" />
-				<div className="w-full scale-125 flex justify-center">
+				<div className="w-full scale-110 sm:scale-125 flex justify-center">
 					<Image src={Copyright} objectFit="contain" />
 				</div>
 			</div>
 
 			{/* Used for the bottom grass section */}
-			<div className="absolute bottom-8 left-0 w-screen">
+			<div className="absolute bottom-48 sm:bottom-8 left-0 w-screen">
 				<Image src={Grass} objectFit="contain" layout="responsive" />
 			</div>
-			<div className="absolute -bottom-3 w-screen">
+			<div className="absolute bottom-40 sm:-bottom-3 w-screen">
 				<Image
 					src={GrassFront}
 					objectFit="contain"
-					layout="responsive"
+					// layout="responsive"
 				/>
 			</div>
 		</div>
