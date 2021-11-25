@@ -84,8 +84,9 @@
     z-index: 1000000 !important;
   }
   .leafWrapper-5 {
-    @apply absolute top-[75%] left-1/4;
+    @apply absolute top-[15%] left-1/2;
     z-index: 1000000 !important;
+    width: 5rem;
   }
   .leaf {
     @apply object-contain w-20 h-28;
