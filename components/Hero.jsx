@@ -1,25 +1,31 @@
 import Image from 'next/image';
-import GrassFront from '../assets/grass front.png';
-import Grass from '../assets/grass.png';
-import Layer675 from '../assets/Layer 675.png';
-import Base from '../assets/base.png';
-import LogoBase from '../assets/logo base.png';
-import BattleSaga from '../assets/battle saga.png';
-import ElementSide1 from '../assets/element side 1.png';
-import ElementSide2 from '../assets/element side 2.png';
-import Orge from '../assets/ogre.png';
-import Warrior2 from '../assets/warrior 2.png';
-import Warrior1 from '../assets/warrior 1.png';
-import Archer1 from '../assets/archer 1.png';
-import Archer2 from '../assets/archer 2.png';
-import Shadow from '../assets/shadow.png';
-import Spartan from '../assets/spartan.png';
-import DragonFront from '../assets/DRAGON_FRONT copy.png';
-import DragonFrontLarge from '../assets/DRAGON_FRONT copy-3x.png';
-import DragonSide from '../assets/DRAGON_SIDE copy.png';
-import DragonSideLarge from '../assets/DRAGON_SIDE copy-3x.png';
-import ComingSoom from '../assets/COMING SOON.png';
-import Copyright from '../assets/2021 © Battle Saga.png';
+import GrassFront from '../public/assets/grass front.png';
+import Grass from '../public/assets/grass.png';
+import Layer675 from '../public/assets/Layer 675.png';
+import Base from '../public/assets/base.png';
+import LogoBase from '../public/assets/logo base.png';
+import BattleSaga from '../public/assets/battle saga.png';
+import ElementSide1 from '../public/assets/element side 1.png';
+import ElementSide2 from '../public/assets/element side 2.png';
+import Orge from '../public/assets/ogre.png';
+import Warrior2 from '../public/assets/warrior 2.png';
+import Warrior1 from '../public/assets/warrior 1.png';
+import Archer1 from '../public/assets/archer 1.png';
+import Archer2 from '../public/assets/archer 2.png';
+import Shadow from '../public/assets/shadow.png';
+import Spartan from '../public/assets/spartan.png';
+// import DragonFront from '../public/assets/DRAGON_FRONT copy.png';
+
+import ComingSoom from '../public/assets/COMING SOON.png';
+import Copyright from '../public/assets/Battle-Saga.png';
+import Thunder from '../public/assets/colorful glare thunder pattern_3800458.png';
+import Lightning1 from '../public/assets/lightning 1.png';
+import Lightning2 from '../public/assets/lighting 2.png';
+import Socials from './Socials';
+import DarkBg from '../public/assets/dark bg.png';
+import { leavesContainer } from '../variants.ts';
+import { motion } from "framer-motion";
+import Leaf from './Leaf.tsx'
 
 const Hero = () => {
 	return (
@@ -27,9 +33,10 @@ const Hero = () => {
 		<div className="relative min-h-screen overflow-y-hidden overflow-x-hidden">
 			{/* This div is used for the top navbar */}
 			<div className="absolute top-0 left-0 h-full w-screen">
-				<Image src={Layer675} objectFit="contain" layout="responsive" />
+				{/* <Image src={Layer675} objectFit="contain" layout="responsive" /> */}
+				<Image src={DarkBg} objectFit="contain" layout="responsive" />
 			</div>
-			<div className="w-full flex justify-center items-center relative">
+			<div className="w-full flex justify-center items-center relative z-50">
 				<Image src={Base} objectFit="contain" />
 				<div className="absolute">
 					<Image src={LogoBase} objectFit="contain" />
@@ -40,7 +47,7 @@ const Hero = () => {
 			</div>
 
 			{/* Used for the left side element */}
-			<div className="absolute z-20 left-0 bottom-48 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
+			<div className="absolute z-20 left-0 bottom-48 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-72 sm:w-72 md:w-80 lg:w-96 xl:w-[600px]">
 				<Image
 					src={ElementSide1}
 					objectFit="contain"
@@ -50,13 +57,24 @@ const Hero = () => {
 				/>
 			</div>
 
-			{/* Two dragons */}
-			<div className="absolute w-[400px] left-80 top-20">
-				<Image src={DragonFrontLarge} objectFit="contain" />
+			{/* Thunder */}
+
+			<motion.div variants={leavesContainer} initial="initial" animate="animate">
+          <Leaf animationSpeed={2.8} className="leafWrapper-1" imageUrl="/assets/dragon-left.png" />
+          <Leaf animationSpeed={2.6} className="leafWrapper-2" imageUrl="/assets/dragon-right.png" />
+        </motion.div>
+
+			{/* <div className="absolute top-8 right-1/2 w-[1020px]">
+				<Image src={Thunder} objectFit="contain" />
+			</div> */}
+			<div className="absolute top-0 left-1/2 w-[1020px]">
+				<Image src={Lightning1} objectFit="contain" />
 			</div>
-			<div className="absolute w-[500px] right-72 translate-y-2 -translate-x-4 top-16">
-				<Image src={DragonSideLarge} objectFit="contain" />
+			<div className="absolute top-0 right-1/2 w-[1020px]">
+				<Image src={Lightning2} objectFit="contain" />
 			</div>
+
+			
 
 			{/* This div is used for the characters */}
 			<div className="w-full scale-50 sm:scale-100 h-1/2 left-1/2 -translate-x-1/2 absolute bottom-44 sm:bottom-28 md:bottom-32 lg:bottom-40 xl:bottom-52 2xl:bottom-64 z-50">
@@ -97,7 +115,7 @@ const Hero = () => {
 			</div>
 
 			{/* Used for the right side element */}
-			<div className="absolute z-20 right-0 bottom-48 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-60 sm:w-72 md:w-80 lg:w-96 xl:w-auto">
+			<div className="absolute z-20 right-0 bottom-48 sm:bottom-12 md:bottom-20 lg:bottom-28 xl:bottom-32 w-72 sm:w-72 md:w-80 lg:w-96 xl:w-[600px]">
 				<Image
 					src={ElementSide2}
 					objectFit="contain"
@@ -124,6 +142,10 @@ const Hero = () => {
 					objectFit="contain"
 					// layout="responsive"
 				/>
+			</div>
+
+			<div className="flex flex-col top-40 z-50 space-y-4 absolute right-10">
+				<Socials />
 			</div>
 		</div>
 	);
